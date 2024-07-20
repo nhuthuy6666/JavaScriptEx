@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 50px 100px;
+    background: linear-gradient(135deg, #a16ed0, #7bbfd6);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img{
+    width: 40px;
+}
+
+.title p{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.notesbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(#9418fd, #571094);
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.notesbtn img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.notesbtn p{
+    font-size: 14px;
+    color: white;
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.note{
+    width: 400px;
+    height: 130px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    background-color: white;
+    position: relative;
+}
+
+.note img{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
