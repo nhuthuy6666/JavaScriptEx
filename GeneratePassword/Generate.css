@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 150px;
+    background-color: rgb(27, 27, 69);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+h3{
+    font-size: 30px;
+    color: white;
+}
+
+#h3span{
+    color: rgb(10, 127, 79);
+    border-bottom: 3px solid rgb(10, 127, 79);
+}
+
+.inputpassword{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.inputpassword input{
+    width: 430px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.inputpassword button{
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.inputpassword button img{
+    width: 100%;
+}
+
+.generatebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: rgb(10, 127, 79);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generatebtn img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.generatebtn p{
+    color: white;
+}
