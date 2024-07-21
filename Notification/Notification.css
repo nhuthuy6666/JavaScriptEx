@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding: 30px 30px;
+    background-color: rgb(197, 189, 205);
+    position: relative;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 300px;
+}
+
+.btns button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+.notificationbox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.noti{
+    width: 400px;
+    height: 88px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.noti i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: green;
+}
+
+.noti.error i{
+    color: red;
+}
+
+.noti.invalid i{
+    color: orange;
+}
+
+.noti::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        width: 0;
+    }
+}
+
+.noti.error::after{
+    background-color: red;
+}
+
+.noti.invalid::after{
+    background-color: orange;
+}
